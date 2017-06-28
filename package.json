@@ -1,0 +1,13 @@
+{
+	"name": "MortalBot_Docker_Image",
+	"version": "1.0.0",
+	"description": "MortalBot",
+	"author": "Stijn van Nieulande <stijn.van.nieulande@gmail.com>",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"discord.js": "latest"
+	}
+}
