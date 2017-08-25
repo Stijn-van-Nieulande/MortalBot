@@ -25,4 +25,7 @@ COPY ./entrypoint.sh /entrypoint.sh
 #COPY ./package.json /home/container/package.json
 #COPY ./server.js /home/container/server.js
 
+RUN         wget https://mortalpvp.com/discordbots/MortalBot/package.json -O /mnt/server/package.json \
+            && wget https://mortalpvp.com/discordbots/MortalBot/server.js -O /mnt/server/server.js
+
 CMD ["/bin/bash", "/entrypoint.sh"]
